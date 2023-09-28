@@ -13,6 +13,7 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 
 .container{
@@ -24,6 +25,7 @@ body{
 
   border: 2px solid white;
   border-radius: 10px;
+  box-shadow: 0px 0px 20px 0px #6bf8ff;
  
   display: flex;
   justify-content: center;
@@ -47,20 +49,27 @@ body{
   flex: 1;
   height: 2rem;
 
-  font-weight:500;
+  font-weight:800;
+  padding-left: 10px;
+
+  background-color: transparent;
+  border-bottom: 2px solid white;
+  color: white;
+  margin-right: 10px;
 }
 
 .inputRow button{
   height: 2rem;
   font-weight: bolder;
-}
+  background-color:black;
+  border: 1px solid white;
+  color: white;
+  border-radius: 5px;
 
-.inputRow button:hover{
-  transform: scale(1.1);
 }
 
 .inputRow button:active{
-  transform: scale(1);
+  transform: scale(0.9);
 }
 
 .tasks{
@@ -69,12 +78,15 @@ body{
 
 .taskList{
   margin: 10px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 25px;
+  margin-right: 40px;
   padding: 10px;
   border: 1px solid gray;
   border-radius: 10px;
   position: relative;
+
+  font-family: sans-serif;
+  font-weight: 500;
 }
 
 .taskList input{
@@ -94,5 +106,13 @@ body{
   background-color: transparent;
 
   font-size: small;
+  font-weight: bolder;
+  border: transparent;
 
+  transform: scale(1.2);
+
+}
+
+.taskList button:active{
+  transform: scale(1.5);
 }
