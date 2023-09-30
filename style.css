@@ -90,7 +90,7 @@ body{
   border: 1px solid gray;
   border-radius: 10px;
   position: relative;
-
+  cursor:pointer;
   font-family: inherit;
   font-weight: 500;
 }
@@ -134,7 +134,7 @@ body{
   border: 1px solid gray;
   border-radius: 10px;
   position: relative;
-
+  cursor:pointer;
   font-family: sans-serif;
   font-weight: 500;
 
