@@ -8,10 +8,11 @@ body{
 
   margin: 0;
 
-  font-family: sans-serif;
+  /* font-family: sans-serif; */
+  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  letter-spacing: 0.216px;
   color: white;
   background-color: black;
-  /* background: radial-gradient(circle, rgba(0,0,0,1) 50%, rgba(40,40,40,1) 86%, rgba(9,9,9,0.771393591616334) 100%); */
 
   display: flex;
   justify-content: center;
@@ -52,7 +53,7 @@ body{
   flex: 1;
   height: 3rem;
 
-  font-weight:800;
+  font-weight:400;
   font-size: 1rem;
   padding-left: 10px;
 
@@ -90,7 +91,7 @@ body{
   border-radius: 10px;
   position: relative;
 
-  font-family: sans-serif;
+  font-family: inherit;
   font-weight: 500;
 }
 
