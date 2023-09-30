@@ -78,7 +78,7 @@ body{
 }
 
 .tasks{
-  width: 21rem;
+  width: 20rem;
 }
 
 .taskList{
@@ -94,12 +94,15 @@ body{
   font-weight: 500;
 }
 
-.taskList input{
-  width: 2rem;
-  height: 1rem;
+.taskList::before {
+  content: '';
   position: absolute;
-  left: -35px;
-  top: 25%
+  border: 1px solid white;
+  border-radius: 3px;
+  top: 10px;
+  left: -30px;
+  height: 18px;
+  width: 18px;
 }
 
 .taskList button{
@@ -121,6 +124,56 @@ body{
 .taskList button:active{
   transform: scale(1.5);
 }
+
+.checked{
+  margin: 10px;
+  margin-left: 25px;
+  margin-right: 40px;
+  padding: 10px;
+  border: 1px solid gray;
+  border-radius: 10px;
+  position: relative;
+
+  font-family: sans-serif;
+  font-weight: 500;
+
+  text-decoration: line-through;
+  color: gray;
+}
+
+.checked::before {
+  content: '';
+  position: absolute;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: -25px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+
+.checked button{
+  position: absolute;
+  right: -35px;
+  top: 25%;
+
+  color: rgb(255, 66, 66);
+  background-color: transparent;
+
+  font-size: small;
+  font-weight: bolder;
+  border: transparent;
+
+  transform: scale(1.2);
+
+}
+
+.checked button:active{
+  transform: scale(1.5);
+}
+
 
 .footer {
   text-align: center;
