@@ -194,3 +194,8 @@ body {
   font-family: sans-serif;
   letter-spacing: 0;
 }
+
+.copyright {
+  color: gray;
+  letter-spacing: 0;
+}
